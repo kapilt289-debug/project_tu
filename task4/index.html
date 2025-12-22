@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">LaundryPro</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services-overview">Services</a></li>
+            <li><a href="#quality-description">About Us</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+        <div class="user-name">John Doe</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-left">
+            <h1>Welcome to LaundryPro</h1>
+            <p>Professional laundry services at your doorstep. Fast, reliable, and affordable.</p>
+            <button id="book-btn">Book a Service Today</button>
+        </div>
+        <div class="hero-right">
+            <img src="https://source.unsplash.com/featured/?laundry" alt="Laundry Services">
+        </div>
+    </section>
+
+    <!-- Service Overview Section -->
+    <section id="services-overview" class="services-overview">
+        <div class="achievement">
+            <h2>15+ Laundry Services</h2>
+        </div>
+        <div class="achievement">
+            <h2>240+ Happy Customers</h2>
+        </div>
+        <div class="achievement">
+            <h2>2+ Years of Experience</h2>
+        </div>
+    </section>
+
+    <!-- Booking Services Section -->
+    <section id="booking" class="booking">
+        <div class="booking-left">
+            <h2>Available Services</h2>
+            <div id="services-list"></div>
+            <p>Add items to the cart</p>
+        </div>
+        <div class="booking-right">
+            <div class="cart">
+                <h3>Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+            <div class="booking-form">
+                <h3>Book Now</h3>
+                <input type="text" id="full-name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <button id="book-now-btn">Book Now</button>
+                <p id="confirmation-msg" style="display: none;">Thank you for booking the service. We will get back to you soon!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Description Section -->
+    <section id="quality-description" class="quality-description">
+        <h2>Why Choose Us?</h2>
+        <div class="qualities">
+            <div class="quality">
+                <h3>Premium Services</h3>
+                <p>Top-notch quality with attention to detail.</p>
+            </div>
+            <div class="quality">
+                <h3>Quick Support</h3>
+                <p>24/7 customer support for all your needs.</p>
+            </div>
+            <div class="quality">
+                <h3>Timely Delivery</h3>
+                <p>Get your laundry back on time, every time.</p>
+            </div>
+            <div class="quality">
+                <h3>Affordable Prices</h3>
+                <p>Competitive pricing without compromising quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="text" id="newsletter-name" placeholder="Full Name">
+        <input type="email" id="newsletter-email" placeholder="Email">
+        <button id="subscribe-btn">Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-content">
+            <div class="logo">LaundryPro</div>
+            <ul>
+                <li><a href="#quality-description">About Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
